@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TestMessageUtil {
 
-  String message = "Robert";
+  String message = "Strohm";
   MessageUtil messageUtil = new MessageUtil(message);
 
   @Test
@@ -19,7 +19,7 @@ public class TestMessageUtil {
   @Test
   public void testSalutationMessage() {
     System.out.println("Inside testSalutationMessage()");
-    message = "Hi!" + "Robert";
+    message = "Hi!" + "Strohm";
     assertEquals(message, messageUtil.salutationMessage());
   }
 }

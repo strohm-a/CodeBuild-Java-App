@@ -18,3 +18,12 @@ phases:
 artifacts:
   files:
     - target/messageUtil-1.0.jar
+  secondary-artifacts:
+    artifact1:
+      files:
+        - target/artifact1/messageUtil-1.0.jar
+      discard-paths: yes
+    artifact2:
+      files:
+        - target/artifact2/messageUtil-1.0.jar
+      discard-paths: yes

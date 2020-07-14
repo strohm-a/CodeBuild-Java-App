@@ -17,4 +17,9 @@ phases:
       - printenv
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - '**/*'
+  secondary-artifacts:
+    artifact1:
+      files:
+        - target/messageUtil-1.0.jar
+      discard-paths: yes

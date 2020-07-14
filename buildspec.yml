@@ -17,13 +17,13 @@ phases:
       - printenv
 artifacts:
   files:
-    - target-test/messageUtil-1.0.jar
+    - target/messageUtil-1.0.jar
   secondary-artifacts:
     artifact1:
       files:
-        - target/artifact1/messageUtil-1-1.0.jar
+        - target/artifact1/messageUtil-1.0.jar
       discard-paths: yes
     artifact2:
       files:
-        - target/artifact2/messageUtil-2-1.0.jar
+        - target/artifact2/messageUtil-1.0.jar
       discard-paths: yes

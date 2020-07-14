@@ -24,6 +24,7 @@ phases:
 artifacts:
   files:
     - target/messageUtil-1.0.jar
+    - $CODEBUILD_SRC_DIR/source1/file1
   secondary-artifacts:
     artifact1:
       base-directory: $CODEBUILD_SRC_DIR/source1

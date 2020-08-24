@@ -21,9 +21,7 @@ phases:
       - printenv
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
-    - secondary-output/testdir1/file1
-    - secondary-output/testdir2/file2
+    - '**/*'
   secondary-artifacts:
     artifact1:
       base-directory: secondary-output/testdir1

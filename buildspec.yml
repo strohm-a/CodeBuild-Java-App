@@ -25,6 +25,7 @@ artifacts:
   files:
     - target/messageUtil-1.0.jar
     - $CODEBUILD_SRC_DIR/source1/file1
+    - $CODEBUILD_SRC_DIR/source2/file2
   secondary-artifacts:
     artifact1:
       base-directory: $CODEBUILD_SRC_DIR/source1

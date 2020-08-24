@@ -12,11 +12,9 @@ phases:
       - echo Build started on `date`
       - mvn install
       - mkdir -p secondary-output/testdir1
-      - cd secondary-output/testdir1
-      - touch file1
+      - touch secondary-output/testdir1/file1
       - mkdir -p secondary-output/testdir2
-      - cd secondary-output/testdir2
-      - touch file2
+      - touch secondary-output/testdir2/file2
   post_build:
     commands:
       - echo Build completed on `date`

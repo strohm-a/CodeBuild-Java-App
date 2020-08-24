@@ -11,11 +11,11 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn install
-      - mkdir -p $CODEBUILD_SRC_DIR/source1
-      - cd $CODEBUILD_SRC_DIR/source1
+      - mkdir -p secondary-output/testdir1
+      - cd secondary-output/testdir1
       - touch file1
-      - mkdir -p $CODEBUILD_SRC_DIR/source2
-      - cd $CODEBUILD_SRC_DIR/source2
+      - mkdir -p secondary-output/testdir2
+      - cd secondary-output/testdir1
       - touch file2
   post_build:
     commands:

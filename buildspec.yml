@@ -11,23 +11,24 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn install
-      - mkdir -p target/secondary-output/testdir1
-      - touch target/secondary-output/testdir1/file1
-      - mkdir -p target/secondary-output/testdir2
-      - touch target/secondary-output/testdir2/file2
+      - mkdir -p secondary-output/testdir1
+      - touch secondary-output/testdir1/file1
+      - mkdir -p secondary-output/testdir2
+      - touch secondary-output/testdir2/file2
   post_build:
     commands:
       - echo Build completed on `date`
       - printenv
 artifacts:
   files:
-    - target/**/*
+    - target/messageUtil-1.0.jar
+    - secondary-output/**/*
   secondary-artifacts:
     artifact1:
-      base-directory: target/secondary-output/testdir1
+      base-directory: secondary-output/testdir1
       files:
         - file1
     artifact2:
-      base-directory: target/secondary-output/testdir2
+      base-directory: secondary-output/testdir2
       files:
         - file2

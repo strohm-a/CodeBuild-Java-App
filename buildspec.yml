@@ -15,7 +15,7 @@ phases:
       - cd secondary-output/testdir1
       - touch file1
       - mkdir -p secondary-output/testdir2
-      - cd secondary-output/testdir1
+      - cd secondary-output/testdir2
       - touch file2
   post_build:
     commands:
@@ -24,14 +24,14 @@ phases:
 artifacts:
   files:
     - target/messageUtil-1.0.jar
-    - secondary-output/testdir1/source1
-    - secondary-output/testdir2/source2
+    - secondary-output/testdir1/file1
+    - secondary-output/testdir2/file2
   secondary-artifacts:
     artifact1:
-      base-directory: secondary-output/testdir1/source1
+      base-directory: secondary-output/testdir1
       files:
         - file1
     artifact2:
-      base-directory: secondary-output/testdir2/source2
+      base-directory: secondary-output/testdir2
       files:
         - file2

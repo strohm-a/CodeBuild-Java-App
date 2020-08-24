@@ -24,14 +24,14 @@ phases:
 artifacts:
   files:
     - target/messageUtil-1.0.jar
-    - $CODEBUILD_SRC_DIR/source1/file1
-    - $CODEBUILD_SRC_DIR/source2/file2
+    - secondary-output/testdir1/source1
+    - secondary-output/testdir2/source2
   secondary-artifacts:
     artifact1:
-      base-directory: $CODEBUILD_SRC_DIR/source1
+      base-directory: secondary-output/testdir1/source1
       files:
         - file1
     artifact2:
-      base-directory: $CODEBUILD_SRC_DIR/source2
+      base-directory: secondary-output/testdir2/source2
       files:
         - file2
